@@ -2,7 +2,7 @@ name: Clone
 on:
   #Run every 12 hours
   schedule:
-    - cron: "15 15 * * *"
+    - cron: "16 05 * * *"
     #- cron: "* */12 * * *"
   workflow_dispatch:
 jobs:
@@ -12,6 +12,6 @@ jobs:
       - name: Run action
         uses: andrewthetechie/gha-clone-releases@v1.7.0
         with:
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          token: ${{ secrets.my_person_token }}
           src_repo: stars-one/XnApp-PC
           copy_assets: true
