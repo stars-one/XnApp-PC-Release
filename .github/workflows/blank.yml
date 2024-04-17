@@ -14,5 +14,4 @@ jobs:
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           src_repo: stars-one/XnApp-PC
-          dst_repo: stars-one/XnApp-PC-Release
           copy_assets: true
